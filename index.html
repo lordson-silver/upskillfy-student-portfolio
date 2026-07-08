@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="AJ Lordson - Web Developer Portfolio" />
+		<title>AJ Lordson | Web Developer</title>
+
+		<!-- CSS Stylesheet -->
+		<link rel="stylesheet" href="assets/style.css" />
+
+		<!-- Google Fonts: Outfit (for modern geometric headlines) and Inter (for clean, highly legible body text) -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<header class="navbar">
+			<div class="nav-container">
+				<div class="logo">
+					<!-- SVG Logo for sharp, scalable vector illustration -->
+					<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<circle
+							cx="12"
+							cy="12"
+							r="10"
+							stroke="currentColor"
+							stroke-width="2.5"
+						/>
+						<circle cx="12" cy="12" r="4" fill="currentColor" />
+					</svg>
+					<span class="logo-text">Lordson AJ</span>
+				</div>
+
+				<!-- Pulsing availability indicator to demonstrate CSS animations (Keyframes) -->
+				<div class="status-pill">
+					<span class="pulse-dot"></span>
+					<span class="status-text">Available</span>
+				</div>
+
+				<a href="#contact" class="nav-cta">Let's Talk</a>
+			</div>
+		</header>
+
+		<main class="portfolio-grid">
+			<!-- CARD 1: HERO / BIO CARD -->
+			<section class="card card-hero">
+				<div class="card-hero-header">
+					<img
+						class="mini-avatar"
+						src="assets/profile.jpg"
+						alt="Angela Yu Profile Photo"
+					/>
+					<div class="hero-meta">
+						<h2 class="hero-name">Lordson Ajatiton</h2>
+						<p class="hero-tagline">Tutor at Upskillfy</p>
+					</div>
+				</div>
+
+				<h1 class="hero-title">
+					Building responsive web apps &amp; teaching developers globally.
+				</h1>
+
+				<p class="hero-desc">
+					I am Lordson Ajatiton, a Frontend Developer based in Port Harcourt,
+					Nigeria. I started learning to code at the age of 16 because I wanted
+					to build my own websites. Over the years, I have gained a wealth of
+					experience designing and developing web applications. I ❤️ clean code,
+					modern frameworks, and teaching others how to code.
+				</p>
+
+				<!-- Tech stack badges - good for teaching list elements or inline-flex spacing -->
+				<div class="tech-badges">
+					<span class="badge">HTML5</span>
+					<span class="badge">CSS Grid</span>
+					<span class="badge">Flexbox</span>
+					<span class="badge">JavaScript</span>
+					<span class="badge">UI/UX Design</span>
+				</div>
+
+				<!-- INSTRUCTOR NOTE: High Converting Elements
+           Teaching Opportunity: Discuss call-to-action (CTA) hierarchy.
+           The location and availability status have been moved onto the portrait card overlay
+           so students learn about absolute positioning, layering, and pill badge design
+           in context with image containers rather than cluttering the text side.
+      -->
+
+				<div class="hero-ctas">
+					<a href="#contact" class="btn btn-primary">
+						<svg
+							width="16"
+							height="16"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<line x1="5" y1="12" x2="19" y2="12"></line>
+							<polyline points="12 5 19 12 12 19"></polyline>
+						</svg>
+						Hire Me
+					</a>
+					<a href="#" class="btn btn-outline" download>
+						<svg
+							width="16"
+							height="16"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+							<polyline points="7 10 12 15 17 10"></polyline>
+							<line x1="12" y1="15" x2="12" y2="3"></line>
+						</svg>
+						Download CV
+					</a>
+				</div>
+
+				<div class="hero-socials">
+					<span class="socials-label">Follow me:</span>
+					<div class="social-icons">
+						<a href="#" aria-label="GitHub"
+							><svg
+								width="20"
+								height="20"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path
+									d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+								></path></svg
+						></a>
+						<a href="#" aria-label="LinkedIn"
+							><svg
+								width="20"
+								height="20"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path
+									d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+								></path>
+								<rect x="2" y="9" width="4" height="12"></rect>
+								<circle cx="4" cy="4" r="2"></circle></svg
+						></a>
+						<a href="#" aria-label="Twitter"
+							><svg
+								width="20"
+								height="20"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path
+									d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+								></path></svg
+						></a>
+						<a href="#" aria-label="Instagram"
+							><svg
+								width="20"
+								height="20"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+								<path
+									d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+								></path>
+								<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg
+						></a>
+					</div>
+				</div>
+			</section>
+
+			<!-- CARD 2: PORTRAIT / DISPLAY CARD -->
+
+			<section class="card card-image">
+				<img
+					class="hero-portrait"
+					src="assets/profile.jpg"
+					alt="Angela Yu Portrait"
+				/>
+
+				<span class="mobile-role-label">Web Developer</span>
+
+				<div class="image-overlay">
+					<!-- Location badge -->
+					<span class="overlay-badge">
+						<svg
+							width="13"
+							height="13"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+							<circle cx="12" cy="10" r="3"></circle>
+						</svg>
+						Port Harcourt, Nigeria
+					</span>
+					<!-- Available Now pill — reuses the pulse-dot keyframe animation -->
+					<span class="overlay-badge overlay-available">
+						<span class="overlay-pulse-dot"></span>
+						Available Now
+					</span>
+				</div>
+			</section>
+
+			<!-- CARD 3: DETAILED SKILLS CARD -->
+
+			<section class="card card-skills">
+				<h3 class="section-label">Core Skills</h3>
+				<div class="skills-container">
+					<div class="skill-row">
+						<div class="skill-icon-box">
+							<!-- Code Bracket SVG -->
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<polyline points="16 18 22 12 16 6"></polyline>
+								<polyline points="8 6 2 12 8 18"></polyline>
+							</svg>
+						</div>
+						<div class="skill-details">
+							<h4>Design &amp; Development</h4>
+							<p>
+								Crafting robust front-end architectures using semantic markup,
+								modular CSS, and modern framework patterns. Focused on clean
+								code and accessibility.
+							</p>
+						</div>
+					</div>
+
+					<div class="skill-row">
+						<div class="skill-icon-box skill-chilli">
+							<!-- Flame / Chilli SVG -->
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path
+									d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"
+								></path>
+							</svg>
+						</div>
+						<div class="skill-details">
+							<h4>Unwavering Resolve</h4>
+							<p>
+								The ability to stay focused and committed to a task, even when
+								faced with challenges. A true testament to my grit and
+								determination.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CARD 4: STUDENT SHOWCASE / PROJECTS CARD -->
+
+			<section class="card card-projects">
+				<div class="projects-header">
+					<h3 class="section-label">Featured Projects</h3>
+					<span class="project-count">3 Built in Training</span>
+				</div>
+
+				<div class="projects-grid">
+					<div class="project-item">
+						<div class="project-info">
+							<span class="project-tag">Day 15 • Quiz App</span>
+							<h5>JavaScript Trivia Engine</h5>
+							<p>
+								An interactive trivia app with DOM state management, score
+								tracking, and smooth transitions.
+							</p>
+						</div>
+						<a
+							href="#"
+							class="project-link"
+							aria-label="View Trivia Engine Project"
+						>
+							<svg
+								width="20"
+								height="20"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<line x1="5" y1="12" x2="19" y2="12"></line>
+								<polyline points="12 5 19 12 12 19"></polyline>
+							</svg>
+						</a>
+					</div>
+
+					<div class="project-item">
+						<div class="project-info">
+							<span class="project-tag">Day 10 • API Integration</span>
+							<h5>Live Weather Dashboard</h5>
+							<p>
+								Asynchronous data fetching from OpenWeather API displaying
+								search results with dynamic backgrounds.
+							</p>
+						</div>
+						<a
+							href="#"
+							class="project-link"
+							aria-label="View Weather Dashboard Project"
+						>
+							<svg
+								width="20"
+								height="20"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<line x1="5" y1="12" x2="19" y2="12"></line>
+								<polyline points="12 5 19 12 12 19"></polyline>
+							</svg>
+						</a>
+					</div>
+
+					<div class="project-item">
+						<div class="project-info">
+							<span class="project-tag">Day 6 • CSS Box Model</span>
+							<h5>Responsive Blog Layout</h5>
+							<p>
+								A multi-column grid layout exploring margins, paddings, borders,
+								and modern layout structures.
+							</p>
+						</div>
+						<a
+							href="#"
+							class="project-link"
+							aria-label="View Blog Layout Project"
+						>
+							<svg
+								width="20"
+								height="20"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<line x1="5" y1="12" x2="19" y2="12"></line>
+								<polyline points="12 5 19 12 12 19"></polyline>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- CARD 5: CONTACT CARD -->
+
+			<section class="card card-contact" id="contact">
+				<h3 class="section-label">Get In Touch</h3>
+				<h2 class="contact-title">
+					Let's talk about web development (or Anime).
+				</h2>
+				<p class="contact-text">
+					Love coding or anime? Let's connect! I am always up for sharing
+					developer tips, reviewing student projects, or bantering whose anime
+					is better between crunchyroll and funimation.
+				</p>
+
+				<div class="contact-actions">
+					<a class="btn btn-primary" href="mailto:[EMAIL_ADDRESS]">
+						<span>Email Me</span>
+						<svg
+							width="18"
+							height="18"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path
+								d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+							></path>
+							<polyline points="22,6 12,13 2,6"></polyline>
+						</svg>
+					</a>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="footer-socials">
+					<a class="footer-link" href="#" target="_blank" rel="noopener"
+						>LinkedIn</a
+					>
+					<a class="footer-link" href="#" target="_blank" rel="noopener"
+						>Twitter</a
+					>
+					<a class="footer-link" href="#" target="_blank" rel="noopener"
+						>Website</a
+					>
+				</div>
+				<p class="copyright">
+					&copy; Lordson Ajatiton @ Upskillfy. Capstone project.
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
