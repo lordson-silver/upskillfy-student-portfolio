@@ -9,6 +9,8 @@
 	--text-primary: #18181b;
 	--text-secondary: #71717a;
 	--text-muted: #a1a1aa;
+	--white: #ffffff;
+	--nav-color: rgba(255, 255, 255, 0.85);
 
 	/* Accents & States */
 	--accent: #10b981; /* Emerald green (representing availability) */
@@ -30,6 +32,15 @@
 	--font-family-headings: 'Outfit', sans-serif;
 }
 
+body.dark {
+	--bg-color: #09090b;
+	--white: #ffffff;
+	--card-bg: #18181b;
+	--text-primary: #f4f4f5;
+	--text-secondary: #a1a1aa;
+	--border-color: rgba(255, 255, 255, 0.08);
+	--nav-color: rgba(24, 24, 27, 0.85);
+}
 /* ==========================================================================
    BASE & RESET STYLES
    ========================================================================== */
@@ -82,7 +93,7 @@ p {
 	width: 90%;
 	max-width: 1100px;
 	height: 64px;
-	background-color: rgba(255, 255, 255, 0.85);
+	background-color: var(--nav-color);
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
 	border: 1px solid var(--border-color);
@@ -177,7 +188,7 @@ p {
 
 .nav-cta:hover {
 	background-color: var(--text-primary);
-	color: #ffffff;
+	color: var(--white);
 }
 
 /* ==========================================================================
@@ -388,7 +399,7 @@ p {
 	background-color: rgba(24, 24, 27, 0.8);
 	backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
-	color: #ffffff;
+	color: var(--white);
 	font-size: 0.75rem;
 	font-weight: 500;
 	padding: 6px 14px;
@@ -529,7 +540,7 @@ p {
 
 .project-item:hover .project-link {
 	background-color: var(--text-primary);
-	color: #ffffff;
+	color: var(--white);
 	transform: translateX(4px);
 }
 
@@ -573,7 +584,7 @@ p {
 
 .btn-primary {
 	background-color: var(--text-primary);
-	color: #ffffff;
+	color: var(--white);
 }
 
 .btn-primary:hover {
@@ -681,7 +692,7 @@ p {
 		left: 20px;
 		right: 0;
 		padding: 60px 24px 24px;
-		color: #ffffff;
+		color: var(--white);
 		font-family: var(--font-family-headings);
 		font-size: 2rem;
 		font-weight: 800;
